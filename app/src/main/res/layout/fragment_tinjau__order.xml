@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".fragment.Tinjau_Order"
+    >
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+              <LinearLayout
+                  android:paddingLeft="5dp"
+
+                  android:paddingRight="5dp"
+                  android:layout_centerVertical="true"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+            <TextView
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:text="ID TRANSAKSI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/tinjau_id_transaski_et"
+                android:hint="ID Transaksi"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center_horizontal"
+                android:text="atau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/tinjau_id_transaksi_scan_bt"
+                    android:elevation="10dp"
+                    android:text="SCAN"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+              </LinearLayout>
+
+                  <Button
+                      android:layout_marginBottom="10dp"
+                      android:layout_alignParentBottom="true"
+                      android:elevation="20dp"
+                      android:textColor="#e2e2e2"
+                      android:text="Tinjau"
+                      android:id="@+id/tinjau_id_transaski_submit_bt"
+                      android:background="@color/colorAccent"
+                      android:layout_width="match_parent"
+                      android:layout_height="40dp" />
+              </RelativeLayout>
+
+          </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:padding="5dp"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3b3b3b"
+    tools:context=".fragment.Insert_Books">
+
+    <LinearLayout
+        android:elevation="2dp"
+        android:orientation="vertical"
+
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+           android:textColor="#e7e7e7"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/tv_result"
+            android:text="Detail Buku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_insert2"
+            android:orientation="vertical"
+            android:padding="2dp">
+            <TableLayout
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+
+                    >
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ID Buku"
+                        android:textColor="#262626"
+                        android:textSize="14sp" />
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/scan_code_bt"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:drawableRight="@drawable/ic_barcode_24dp"
+                            android:drawableEnd="@drawable/ic_barcode_24dp"
+                            android:drawablePadding="5dp"
+                            android:paddingRight="7.5dp" />
+
+                        <EditText
+
+                            android:id="@+id/id_buku_ins_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint=" 8120351239" />
+                    </LinearLayout>
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Judul Buku"
+                        android:textColor="#262626"
+                        android:textSize="14sp" />
+                    <EditText
+                        android:layout_weight="1"
+                        android:id="@+id/judul_buku_Ins_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:hint="Ex : Matematika" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kelas"
+                        android:textColor="#262626"
+                        android:textSize="14sp" />
+
+
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:id="@+id/kelas_buku_ins_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:hint="Ex : X,XI,XII" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kurikulum"
+                        android:textColor="#262626"
+                        android:textSize="14sp" />
+
+
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:id="@+id/kurkum_buku_ins_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Ex : 2013" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis"
+                        android:textColor="#262626"
+                        android:textSize="14sp" />
+
+
+
+                    <Spinner
+                        android:layout_weight="1"
+                        android:id="@+id/spinner_jenis_ins_books"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        ></Spinner>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Penulis"
+                        android:textColor="#262626"
+                        android:textSize="14sp" />
+
+
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:id="@+id/penulis_ins_books"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" Pidi Baiq" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Foto Buku"
+                        android:textColor="#262626"
+                        android:textSize="14sp" />
+
+
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:id="@+id/foto_buku_ins_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" http://img.jpeg" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jumlah Buku"
+                        android:textColor="#262626"
+                        android:textSize="14sp" />
+
+
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:id="@+id/jumlah_buku_ins_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" 50" />
+                </TableRow>
+            </TableLayout>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_Ins_bt"
+            android:shadowColor="#000"
+            android:textColor="#e2e2e2"
+            android:text="INSERT BUKU"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_insert_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

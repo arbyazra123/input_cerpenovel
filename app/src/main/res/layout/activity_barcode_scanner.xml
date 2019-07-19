@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Barcode_scanner"
+    android:background="@color/colorPrimary"
+    android:paddingTop="100dp"
+    android:paddingBottom="100dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    >
+    <LinearLayout
+        android:elevation="20dp"
+        android:padding="15dp"
+        android:background="@drawable/bg_insert"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <SurfaceView
+        android:id="@+id/sv_barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

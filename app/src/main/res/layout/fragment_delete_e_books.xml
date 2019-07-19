@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Delete_eBooks">
+
+    <LinearLayout
+        android:padding="2dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:textColor="#fff"
+                android:id="@+id/delete_search_et_topdeleteebooks"
+                android:textColorHint="#fff"
+                android:hint="Search. . ."
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_alignParentRight="true"
+                android:id="@+id/delete_search_bt_topdeleteebooks"
+                android:paddingLeft="10dp"
+
+                android:drawableStart="@drawable/ic_search_black_24dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="5dp"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/delete_ebooks_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</LinearLayout>

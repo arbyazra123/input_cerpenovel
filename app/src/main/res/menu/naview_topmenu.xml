@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/ic_done_all_black_24dp"
+        android:id="@+id/approved"
+        android:title="DISETUJUI">
+
+    </item>
+    <item
+        android:icon="@drawable/ic_clear_black_24dp"
+        android:id="@+id/unnapproved"
+        android:title="BELUM DISETUJUI">
+    </item>
+
+</menu>

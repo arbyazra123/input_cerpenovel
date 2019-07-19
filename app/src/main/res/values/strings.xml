@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Smean Digital Library</string>
+    <string name="title_activity_dashboard">Digital Library</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="tos">
+        <item>Denda berkelipatan Rp. 500 1x24 jam jika telat dikembalikan sejak waktu kembali ditentukan</item>
+        <item>Buku rusak sedang akan dikenakan biaya denda Rp. 2000</item>
+        <item>Buku rusak berat akan dikenakan biaya denda Rp. 5000</item>
+        <item>Buku tidak boleh dicoret-coret</item>
+        <item>Buku hilang akan dikenakan biaya denda sesuai harga bukunya</item>
+        <item>Pengembali buku harus mempunyai ID transaksi yang sama saat memesan</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

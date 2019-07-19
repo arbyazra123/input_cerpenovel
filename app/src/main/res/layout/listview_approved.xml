@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:padding="2dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:id="@+id/book_cover_Approved_iv"
+            android:scaleType="centerCrop"
+            android:layout_width="100dp"
+            android:layout_height="130dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_marginBottom="5dp"
+                android:id="@+id/judul_buku_approved_tv"
+                android:layout_marginLeft="10dp"
+                android:text="Judul buku"
+                android:textColor="#efefef"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TableLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="ID Order"
+                        android:textColor="#e6e6e6"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:id="@+id/id_approved_tv"
+                        android:textSize="14sp"
+                        android:textColor="#ededed"
+                        android:text="Loading. . ."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="Jumlah"
+                        android:textColor="#e6e6e6"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:id="@+id/jumlah_approved_tv"
+                        android:textSize="14sp"
+                        android:textColor="#ededed"
+                        android:text="Loading. . ."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="Kembali"
+                        android:textColor="#e6e6e6"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:id="@+id/kembali_approved_tv"
+                        android:textSize="14sp"
+                        android:textColor="#ededed"
+                        android:text="Loading. . ."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="Status"
+                        android:textColor="#e6e6e6"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:id="@+id/status_approved_tv"
+                        android:textSize="14sp"
+                        android:textColor="#ededed"
+                        android:text="Loading. . ."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="#b9b9b9"
+        android:layout_marginTop="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+</LinearLayout>

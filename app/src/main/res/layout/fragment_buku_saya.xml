@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2d2d2d"
+    tools:context=".fragment.BukuSaya">
+
+<android.support.design.widget.BottomNavigationView
+    android:layout_marginTop="-25dp"
+    android:id="@+id/bukusaya_naview"
+    app:menu="@menu/naview_topmenu"
+    android:textAlignment="center"
+    app:itemIconTint="#fff"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    app:itemTextColor="#fff"
+    android:layout_height="80dp"></android.support.design.widget.BottomNavigationView>
+<android.support.v4.view.ViewPager
+    android:id="@+id/bukusaya_viewp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_height="200dp"
+>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <View
+        android:background="@drawable/bg_card_peminjaman"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content">
+
+    </View>
+        <ImageView
+            android:id="@+id/peminjaman_list_iv"
+            android:background="@drawable/bg"
+            android:layout_width="110dp"
+            android:layout_height="120dp" />
+        <TextView
+            android:id="@+id/peminjaman_jb_tv"
+            android:layout_marginTop="123dp"
+            android:textColor="#333333"
+            android:layout_marginLeft="8dp"
+            android:text="Judul Buku"
+            android:layout_width="100dp"
+            android:layout_height="19dp" />
+        <TextView
+            android:id="@+id/peminjaman_pb_tv"
+            android:layout_marginLeft="8dp"
+            android:textSize="10dp"
+            android:layout_marginTop="142dp"
+            android:text="Penulis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

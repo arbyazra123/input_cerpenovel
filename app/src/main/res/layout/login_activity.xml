@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+    android:background="@drawable/bg"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    >
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-23dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/viga_reguler"
+                android:gravity="center_horizontal"
+                android:text="DIGITAL"
+                android:textColor="#c3c3c3"
+                android:textSize="50sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-13dp"
+                android:layout_marginLeft="2dp"
+                android:fontFamily="@font/major_mono"
+                android:gravity="center_horizontal"
+                android:text="school"
+                android:textColor="#c4c4c4"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/viga_reguler"
+                android:gravity="center_horizontal"
+                android:text="LIBRARY"
+                android:textColor="#c2c2c2"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:textColor="#f5f5f5"
+        android:id="@+id/nis_et"
+        android:inputType="number"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/roundet_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="13dp"
+        android:hint="N I S"
+        android:textColorHint="#a7a7a7"
+        android:paddingLeft="20dp"
+        android:ems="10"
+        />
+
+    <EditText
+        android:textColor="#f5f5f5"
+
+        android:ems="10"
+        android:id="@+id/password_et"
+        android:hint="P A S S W O R D"
+        android:textColorHint="#a7a7a7"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/roundet_login"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:textSize="13dp"
+        android:paddingLeft="20dp"
+        android:layout_height="45dp" />
+
+    <Button
+    android:id="@+id/button_et"
+        android:text="L O G I N"
+        android:layout_marginTop="10dp"
+        android:textColor="#a7a7a7"
+        android:background="@drawable/roundbt_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_menu_ins_book"
+        android:icon="@drawable/ic_add_box_black_24dp"
+        android:title="INSERT"></item>
+    <item
+        android:icon="@drawable/ic_create_black_24dp"
+        android:id="@+id/nav_menu_edit_book"
+        android:title="EDIT"></item>
+    <item
+        android:icon="@drawable/ic_delete_forever_black_24dp"
+        android:id="@+id/nav_menu_delete_book"
+        android:title="DELETE"></item>
+</menu>

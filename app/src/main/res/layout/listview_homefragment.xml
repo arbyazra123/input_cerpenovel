@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="vertical"
+
+    android:elevation="1dp"
+
+    >
+
+    <LinearLayout
+        android:elevation="1dp"
+        android:background="@drawable/bg_listview_homefragment"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <ImageView
+
+            android:id="@+id/book_cover_iv"
+            android:scaleType="centerCrop"
+            android:layout_width="100dp"
+            android:layout_height="130dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/judul_buku_tv"
+            android:layout_marginLeft="10dp"
+            android:text="JUDUL BUKU"
+            android:textColor="#efefef"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeStepGranularity="2sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/penulis_buku_tv"
+                    android:textSize="12sp"
+                    android:textColor="#efefef"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Nama pengarang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/genre_tv"
+                    android:textSize="12sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="#efefef"
+                    android:layout_marginLeft="10dp"
+                    android:text="Genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tahun_terbit_tv"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="#ededed"
+                android:layout_marginLeft="10dp"
+                android:text="Tahun Terbit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+</LinearLayout>
+
+    </LinearLayout>
+

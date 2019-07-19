@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:elevation="1dp"
+        android:background="@drawable/bg_listview_homefragment"
+        android:padding="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:id="@+id/book_cover_mainLib_iv"
+            android:scaleType="centerCrop"
+            android:layout_width="100dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="130dp" />
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_marginBottom="5dp"
+                android:id="@+id/judul_buku_mainLib_tv"
+                android:text="Judul buku"
+                android:textColor="#efefef"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TableLayout
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="Kelas"
+                        android:textColor="#e6e6e6"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:id="@+id/kelas_buku_tv"
+                        android:textSize="14sp"
+                        android:textColor="#efefef"
+                        android:text="Loading. . ."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="Kurikulum"
+                        android:textColor="#e6e6e6"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:id="@+id/kurikulum_buku_tv"
+                        android:textSize="14sp"
+                        android:textColor="#efefef"
+                        android:text="Loading. . ."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="Jenis"
+                        android:textColor="#e6e6e6"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:id="@+id/jenis_buku_tv"
+                        android:textSize="14sp"
+                        android:textColor="#ededed"
+                        android:text="Loading. . ."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="Stok"
+                        android:textColor="#e6e6e6"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:id="@+id/stok_buku_tv"
+                        android:textSize="14sp"
+                        android:textColor="#ededed"
+
+                        android:text="Loading. . ."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

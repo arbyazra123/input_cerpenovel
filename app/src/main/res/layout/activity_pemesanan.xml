@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    >
+    <LinearLayout
+        android:padding="2dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/book_cover_Pem_iv"
+            android:scaleType="centerCrop"
+            android:layout_width="100dp"
+            android:layout_height="130dp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/judul_buku_Pem_tv"
+                    android:layout_marginLeft="10dp"
+                    android:text="Judul buku"
+                    android:textColor="#efefef"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="Kelas"
+                    android:textColor="#e6e6e6"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/kelas_buku_Pem_tv"
+                    android:textSize="15dp"
+                    android:textColor="#efefef"
+                    android:text="KELAS BUKU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="Kurikulum"
+                    android:textColor="#e6e6e6"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/kurikulum_buku_Pem_tv"
+                    android:textSize="14sp"
+                    android:textColor="#efefef"
+                    android:text="Kur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="Jenis"
+                    android:textColor="#e6e6e6"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/jenis_buku_Pem_tv"
+                    android:textSize="14sp"
+                    android:textColor="#ededed"
+                    android:text="jenis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="Stok"
+                    android:textColor="#e6e6e6"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/stok_buku_Pem_tv"
+                    android:textSize="14sp"
+                    android:textColor="#ededed"
+                    android:text="Stok Buku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+    <View
+        android:background="#646464"
+        android:layout_marginTop="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="Detail Pemesanan"
+        android:textColor="#b9b9b9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:paddingTop="5dp"
+                android:id="@+id/input_layout_nama"
+                android:layout_width="match_parent"
+                android:theme="@style/TextLabel"
+                android:layout_height="wrap_content">
+            <EditText
+                android:inputType="text"
+                android:id="@+id/nama_Pem_et"
+                android:textColor="#e6e6e6"
+                android:textColorHint="#fff"
+                android:gravity="left"
+                android:hint="Nama Peminjam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:paddingTop="5dp"
+            android:id="@+id/input_layout_jumlah"
+            android:layout_width="match_parent"
+            android:theme="@style/TextLabel"
+            android:layout_height="wrap_content">
+            <EditText
+                android:inputType="number"
+                android:id="@+id/jumlah_dipinjam_Pem_et"
+                android:textColor="#e6e6e6"
+                android:layout_marginTop="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#b9b9b9"
+                android:hint="Jumlah Buku"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:paddingTop="5dp"
+            android:id="@+id/input_layout_kelas"
+            android:layout_width="match_parent"
+            android:theme="@style/TextLabel"
+            android:layout_height="wrap_content">
+            <EditText
+                android:inputType="text"
+                android:id="@+id/kelas_Pem_et"
+                android:textColor="#e6e6e6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#b9b9b9"
+                android:hint="Kelas Peminjam"/>
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="10sp"
+                android:text="Waktu Kembali"
+                android:textColor="#e6e6e6"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4.5dp"
+                android:backgroundTint="#e6e6e6"
+                android:drawableStart="@drawable/ic_date_range_black_24dp"
+                android:id="@+id/dt_Pem_bt" />
+            <EditText
+                android:inputType="datetime"
+                android:textColor="#e6e6e6"
+                android:id="@+id/dt_Pem_et"
+                android:textColorHint="#e6e6e6"
+                android:hint="0000-00-00"
+                android:layout_marginTop="5dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_for_tos"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#0061bc"
+            android:textSize="12sp"
+            android:text="*Baca ketentuan buku dengan klik tulisan ini"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/pesan_Pem_bt"
+                android:text="PESAN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                />
+
+
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Result"
+    android:id="@+id/result_srl"
+    android:background="@color/colorPrimary">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/LLforSB"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="ID TRANSAKSI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg_result"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+    <TextView
+        android:textColor="#ff0056"
+        android:textSize="14sp"
+        android:id="@+id/id_transaksi"
+        android:gravity="center"
+        android:text="ID TRANSAKSI"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#9f9f9f"
+        android:text="atau"
+        android:textSize="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="QR CODE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg_result"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+<ImageView
+    android:id="@+id/iv_barcode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/colorAccent"
+            android:text="STATUS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#fd4080"
+            android:id="@+id/status_tv"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:text="STATUS"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:textSize="13sp"
+            android:id="@+id/cekdata"
+
+            android:textColor="#20a2ff"
+            android:text="Cek Pesanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/notice_3"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="#d1d1d1"
+                android:text="Seret layar kebawah untuk refresh STATUS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+            android:id="@+id/notice_2"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="#bcbcbc"
+            android:text="*Kamu bisa cek data ini di 'Data Peminjaman'"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/notice_1"
+            android:gravity="center"
+android:layout_alignParentBottom="true"
+            android:textSize="14sp"
+            android:textColor="#bcbcbc"
+            android:text="*Tunjukan Bukti Transaksi ini ke Petugas Perpustakaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

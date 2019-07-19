@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ProgressBar
+        android:id="@+id/progressBarPeminjaman"
+        style="?android:attr/progressBarStyleLarge"
+        android:indeterminate="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".fragment.Peminjaman_fragment">
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:text="e-Books"
+        android:textColor="#e4e4e4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#c7c7c7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="170dp">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/peminjaman_list_ebooks_rv"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>
+<View
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="#c7c7c7"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"></View>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#e4e4e4"
+        android:text="Semua Kategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ScrollView android:layout_height="match_parent" android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/peminjaman_list_kategori_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
+</RelativeLayout>

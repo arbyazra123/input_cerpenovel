@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6b6b6b"
+        tools:context=".activity.Edit_ebooks_result_edit">
+
+        <LinearLayout
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="#e7e7e7"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="Detail eBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:padding="2dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_insert2"
+                >
+                <TableLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="#262626"
+                            android:textSize="14sp"
+                            android:text="I S B N"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:layout_weight="3"
+                            android:layout_marginBottom="2dp"
+                            android:hint=" 123456789"
+                            android:id="@+id/isbn_ins_ebooks_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="#262626"
+                            android:textSize="14sp"
+                            android:text="Judul Buku"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:layout_weight="3"
+                            android:layout_marginBottom="2dp"
+                            android:hint=" Dilan 1990"
+                            android:id="@+id/judul_buku_Ins_et_ebooks_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="#262626"
+                            android:textSize="14sp"
+                            android:text="Penulis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:layout_weight="3"
+                            android:layout_marginBottom="2dp"
+                            android:hint=" Pidi Baiq"
+                            android:id="@+id/penulis_ins_ebooks_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="#262626"
+                            android:textSize="14sp"
+                            android:text="Penerbit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:layout_weight="3"
+                            android:id="@+id/penerbit_ins_et_ebooks_edit"
+                            android:hint="Ex : 8120351239"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="#262626"
+                            android:textSize="14sp"
+                            android:text="Terbit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                        <EditText
+                            android:layout_weight="3"
+                            android:id="@+id/terbit_ins_ebooks_edit"
+                            android:hint="Month-Year"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="#262626"
+                            android:textSize="14sp"
+                            android:text="Jenis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:layout_weight="3"
+                            android:id="@+id/jenis_ins_et_ebooks_edit"
+                            android:hint="Ex : 8120351239"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="#262626"
+                            android:textSize="14sp"
+                            android:text="Cover PDF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:layout_weight="3"
+                            android:id="@+id/cover_ins_et_ebooks_edit"
+                            android:hint=" http://cover.com/img.jpeg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="#262626"
+                            android:textSize="14sp"
+                            android:text="Link PDF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:layout_weight="3"
+                            android:id="@+id/link_ins_et_ebooks_edit"
+                            android:hint="http://pdf.com/dilan.pdf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_Ins_bt_edit"
+                android:shadowColor="#000"
+                android:textColor="#fff"
+                android:text="INSERT BUKU"
+
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_insert_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

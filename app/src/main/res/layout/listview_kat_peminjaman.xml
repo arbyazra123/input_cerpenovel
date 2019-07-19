@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <View
+        android:background="@drawable/bg_card_peminjaman"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></View>
+    <TextView
+        android:id="@+id/peminjaman_kat_tv"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:text="KATEGORI"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</RelativeLayout>

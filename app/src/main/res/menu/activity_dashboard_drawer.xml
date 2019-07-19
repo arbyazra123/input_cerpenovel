@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_peminjaman"
+            android:title="Home" />
+        <item
+            android:visible="false"
+            android:id="@+id/nav_insertbooks"
+            android:icon="@drawable/ic_peminjaman"
+            android:title="Books Setting" />
+        <item
+            android:visible="false"
+            android:id="@+id/nav_insertebooks"
+            android:icon="@drawable/ic_peminjaman"
+            android:title="e-Books Setting" />
+        <item
+            android:visible="false"
+            android:id="@+id/nav_tinjauorder"
+            android:icon="@drawable/ic_peminjaman"
+            android:title="Tinjau Peminjaman" />
+        <item
+            android:visible="false"
+            android:id="@+id/data_pem"
+            android:icon="@drawable/ic_peminjaman"
+            android:title="Data Peminjaman" />
+        <item
+            android:id="@+id/nav_peminjaman"
+            android:icon="@drawable/ic_peminjaman"
+            android:title="Peminjaman" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>
